@@ -15,8 +15,8 @@ public class Taks01 {
         System.out.println("Въведете своето трето цяло число");
         int number3 = Integer.parseInt(scanner.nextLine());
 
-        if (number1 < number3 || number3 > number2) {
-            System.out.println("Въведеното число е средна стойност между Вашето първо и второ цяло число");
+        if (number1 <= number3 && number3 <= number2) {
+            System.out.println("Въведеното число е в диапазона между Вашето първо и второ цяло число");
         } else {
             System.out.println("Въведеното число е извън диапазона на въведените първо и второ цяло число");
         }
