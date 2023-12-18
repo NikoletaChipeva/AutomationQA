@@ -11,9 +11,7 @@ public class Task05 {
 
         int [] newNumbers = new int [numbers.length];
 
-        for (int i = 0; i < numbers.length; i++) {
-            newNumbers [i] = numbers[i];
-        }
+        System.arraycopy(numbers, 0, newNumbers, 0, numbers.length);
         for (int number : newNumbers) {
             System.out.println(number);
         }
