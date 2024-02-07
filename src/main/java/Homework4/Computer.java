@@ -13,13 +13,7 @@ public class Computer {
     }
 
     public int comparePrice(Computer compare){
-        if (this.price > compare.price) {
-            return -1;
-        } else if (this.price < compare.price) {
-            return 1;
-        } else {
-            return 0;
-    }
+        return Double.compare(compare.price, this.price);
 
     }
 
